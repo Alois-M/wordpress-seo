@@ -848,7 +848,7 @@ if ( ! class_exists( 'WPSEO_Sitemaps' ) ) {
 										$src = $scheme . ':' . $src;
 
 									}
-
+									// This check makes no sense if images are to be pulled from a CDN
 									if ( strpos( $src, $host ) === false ) {
 										continue;
 									}
